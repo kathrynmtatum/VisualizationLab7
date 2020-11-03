@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script defer src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Layout & Map</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Airport Connections</h1>
+    
+    <!--Create force and map selections-->
+     <div style="display: flex; float: left; margin: 10px;">
+      <input style="margin: 8px;" type="radio" id="force" name="display" value="force" checked>
+        <label for="force">Force</label>
+        <input style="margin: 8px;" type="radio" id="map" name="display" value="map">
+        <label for="map">Map</label>
+        <div class="tooltip"></div>
+      </div>
+
+     <div class="chart"></div>
+  </body>
+</html>
